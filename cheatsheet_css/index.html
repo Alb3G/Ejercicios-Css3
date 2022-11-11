@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/cheatsheet_css/style.css">
+    <!--Esta etiqueta style va a modificar con ese color y alto a todos los contenedores div que tenga el documento-->
+    <style> 
+        div{
+            background-color:aquamarine ; 
+            height: 500px
+        }
+    </style>
+    
+</head>
+
+<body> <!--Esta etiqueta style corresponde al inline es mas prioritario que el de arriba puesto que se lo ponemos a un solo elemento-->
+    <div style="background-color:red ; height: 500px;"></div>
+    <div></div>
+</body>
+</html>
