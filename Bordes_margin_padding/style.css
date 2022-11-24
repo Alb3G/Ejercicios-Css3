@@ -1,0 +1,51 @@
+#primero {
+    height: 50vh;
+    /* background-image: url(/modificacion_img/img/sample.png); */
+    background-position: center bottom;
+    
+    /*background-attachment: fixed; esta propiedad da efecto de parallax*/ 
+    background-size: cover;
+
+    /*Margenes*/
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin: 20px;
+
+    /* Bordes*/
+    /* border-bottom: green ;
+    border-top: yellow;
+    border-width: 5px;
+    border-style: solid; */
+    border: 5px solid seagreen;
+    
+   /* Padding */
+   /*padding-left: 100px;
+   padding-right: 100px;*/
+   padding: 100px 25px 50px 0px; /*El orden del padding va en sentido de las agujas del reloj*/
+  
+   /*Tamaños
+   px-sera utilizado en general para margenes, paddings, bordes, elemento fijos como la barrade navegacion
+   %-cuando sean relativos al elemento padre.
+   vw-www
+   */
+
+}
+
+.container {
+    height: 1500px;
+    background-color: brown;
+}
+
+/*Elemento de bloque utiliza todo el espacio disponible*/
+h1 {
+    color: black;
+    border: 5px red solid;
+}
+/*Elemento inline utiliza solo el espacio que necesita*/
+span {
+    color: black;
+    border: 5px red solid;
+}
+
