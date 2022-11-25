@@ -6,5 +6,27 @@
 
 /* posicionamiento en css */
 
+[class^="box"] {
+    background-color: steelblue;
+}
 
+.box-0 {
+    display: none;
+}
 
+.box-3, .box-4, .box-3 p, .box-4 p {
+    display: inline-block;
+}
+
+.box-5, .box-6, .box-5 p, .box-6 p {
+    display: inline;
+}
+
+/* Centrar horizontalmente (eje X) */
+.x-centered {
+    background-color: steelblue;
+    height: 50px;
+    width: 25%;
+
+    margin: auto;
+}
