@@ -24,9 +24,106 @@
 
 /* Centrar horizontalmente (eje X) */
 .x-centered {
+    margin: auto;
+}
+.rectangle {
     background-color: steelblue;
     height: 50px;
     width: 25%;
-
-    margin: auto;
 }
+
+/* Posicionamiento*/
+.pos-relative {  /*Esta es desde donde se encuentre*/
+    position:relative ;
+    left: 120px;
+    top: -50px;
+    z-index: -1;
+}
+
+.pos-absolute-parent {  
+    height: 300px;
+    border: 15px solid tomato;
+    position: relative; /*si le ponemos al elemento padre posicion absoluta ya podremos mover al elemeto hijo por dentro del padre en lugar de todo el viewport*/
+}
+
+.pos-absolute-child {
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.pos-fix {
+    background-color: #333;
+    padding: 20px 30px;/*el primer numero siempre es el eje X y el segundo el eje Y*/
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+}
+
+.pos-fix a {
+    color: white;
+    text-decoration: none;
+}
+
+.pos-sticky {
+    background-color: steelblue;
+    padding: 15px 25px;
+
+    position: sticky;
+    top: 0px;
+
+}
+
+.pos-sticky a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.pos-float-parent {
+    border: 5px solid #333;
+    color: white;
+    font-size: 25px   ;
+}
+
+.pos-float-child-1 {
+    background-color: brown;
+    height: 100px;
+    width: 33.3%;
+
+   float: left;
+}
+
+.pos-float-child-2 {
+    background-color: burlywood;
+    height: 100px;
+    width: 33.3%;
+
+    float: left;
+}
+
+.pos-float-child-3 {
+    background-color: olivedrab;
+    height: 100px;
+    width: 33.3%;
+    
+    float:  left;
+}
+
+.pos-float-child-4 {
+    background-color: violet;
+    height: 50px;
+    width: 100%;
+    clear: both ;
+
+    
+}
+
