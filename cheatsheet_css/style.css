@@ -91,7 +91,9 @@
 .pos-float-parent {
     border: 5px solid #333;
     color: white;
-    font-size: 25px   ;
+    font-size: 25px;
+
+    /* overflow: hidden; */
 }
 
 .pos-float-child-1 {
@@ -107,23 +109,38 @@
     height: 100px;
     width: 33.3%;
 
-    float: left;
+    float: right;
 }
 
 .pos-float-child-3 {
     background-color: olivedrab;
-    height: 100px;
-    width: 33.3%;
-    
-    float:  left;
+    height: 50px;
+    width: 100%;
+
 }
 
 .pos-float-child-4 {
     background-color: violet;
     height: 50px;
     width: 100%;
-    clear: both ;
-
     
+    clear: both ;
 }
+
+.pos-float-child-5 {
+    background-color: steelblue;
+    height: 50px;
+    width: 33%;
+    
+   float: right;
+}
+
+.pos-float-child-6 {
+    background-color: rgb(92, 44, 181);
+    height: 50px;
+    width: 100%;
+}
+
+
+
 
