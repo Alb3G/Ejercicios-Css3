@@ -7,7 +7,7 @@
 /* posicionamiento en css */
 
 [class^="box"] {
-    /* background-color: steelblue; */
+    background-color: steelblue;
 }
 
 .box-0 {

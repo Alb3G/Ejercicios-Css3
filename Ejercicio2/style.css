@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px 50px 50px;
+}
+
+.container {
+    width: 80%;
+    height: 50px;
+    background-color: rgba(238, 234, 234, 0.911);
+    border: 1px solid rgba(131, 131, 131, 0.911);
+    position: relative;
+}
+
+[class^="child"]{
+    text-decoration: none;
+    color: black;
+}
+
+.child-1 {
+    position: absolute;
+    left: 10px;
+    top: 30%;
+}
+
+
+.child-2 {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+
+
+
