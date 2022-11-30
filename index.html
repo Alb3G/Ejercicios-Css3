@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        html, body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         body {
             position: relative;
-            margin: 50px;
         }
         .container {
             width: 700px;
-            height: 50px;
+            /* height: 50px; */
             background-color: rgb(202, 202, 202);
             padding: 8px;
             border: 1px solid rgb(131, 130, 130) ;
@@ -25,17 +29,26 @@
             
         }
 
+        .container div{
+            padding: 10px 0;
+        }
+
         [class^="child"] {
-            margin-top: 15px;
+            /* margin-top: 15px; */
         }
 
         .child-1 {
-            display: inline;
+            /* display: inline; */
+            /* padding: 10px 0; */
+            text-align: left;
             float: left;
         }
 
         .child-2 {
-            display: inline;
+            /* display: inline; 
+            */
+            /* padding: 10px 0; */
+            text-align: right;
             float: right;
         }
 
