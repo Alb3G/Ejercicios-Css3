@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            position: relative;
+            margin: 50px;
+        }
+        .container {
+            width: 700px;
+            height: 50px;
+            background-color: rgb(202, 202, 202);
+            padding: 8px;
+            border: 1px solid rgb(131, 130, 130) ;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            
+        }
+
+        [class^="child"] {
+            margin-top: 15px;
+        }
+
+        .child-1 {
+            display: inline;
+            float: left;
+        }
+
+        .child-2 {
+            display: inline;
+            float: right;
+        }
+
+    </style>
+</head>
+
+
+<body>
+<div class="container">
+
+    <div class="child-1">&laquo;Anterior</div>
+    <div class="child-2">Siguiente&raquo;</div>
+
+</div>
+
+    
+</body>
+
+
+</html>
