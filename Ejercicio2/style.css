@@ -13,6 +13,7 @@ body {
     background-color: rgba(238, 234, 234, 0.911);
     border: 1px solid rgba(131, 131, 131, 0.911);
     position: relative;
+    padding: 12px;
 }
 
 [class^="child"]{
@@ -22,15 +23,15 @@ body {
 
 .child-1 {
     position: absolute;
-    left: 10px;
-    top: 30%;
+    left: 12px;
+   
 }
 
 
 .child-2 {
     position: absolute;
-    right: 10px;
-    top: 30%;
+    right: 12px;
+    
 }
 
 

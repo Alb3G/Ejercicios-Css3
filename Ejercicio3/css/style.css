@@ -1,0 +1,30 @@
+ul {
+    padding: 0;
+    width: 30%;
+    border: 1px solid rgb(92, 92, 92);
+}
+
+ul li {
+    background-color: rgb(230, 230, 230);
+    padding: 4px;
+
+    list-style-position: inside;
+    cursor: pointer;
+    list-style-image: url(/Ejercicio3/img/forward-button.png);
+    border-top: 1px solid rgb(92, 92, 92);
+}
+
+ul>li:first-child {
+    border-top: none;
+}
+
+ul>li:hover {
+    background-color: rgb(209, 232, 243);
+}
+
+
+
+
+
+
+
