@@ -1,0 +1,75 @@
+/* Estilos generales */
+*{
+    box-sizing: border-box;
+}
+
+.style {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+/* Estilos del header */
+header {
+    margin-bottom: 10px;
+}
+
+.top-header {
+    position:relative;
+}
+
+.top-header form {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -11px;
+}
+
+/* Estilos del body */
+body {
+    padding: 0;
+}
+
+/* Aside */
+aside {
+    width: 25%;
+    float: left;
+}
+
+.related-links a, .news span {
+    display: block;
+}
+
+/* Main content */
+section {
+    float: right;
+    width: 73%;
+    margin-bottom: 20px;
+}
+
+article {
+    width: 73%;
+    float: left;
+}
+
+article img {
+    float:left;
+    padding-right: 5px;
+}
+
+/* side content */
+.side-content {
+    width: 24%;
+    float: right;
+}
+
+/* Estilos del footer */
+
+.clear {
+    clear: both;
+}
+
+footer span {
+    float: right;
+}
+
+
