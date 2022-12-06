@@ -200,6 +200,8 @@
     }
 }
 
-
-
+/* Flex-box */
+.flex-parent {
+    display: flex;
+}
 
