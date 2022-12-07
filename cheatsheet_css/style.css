@@ -150,7 +150,7 @@
     margin-bottom: 150px;
 } */
 
-.overflow-parent-1 {
+/* .overflow-parent-1 {
     overflow: hidden;
 } 
 
@@ -160,7 +160,7 @@
 
 .overflow-parent-3 {
     overflow: scroll;
-}
+} */
 
 /* Tamaño de cajas (Box-sizing) */
 .box-sizing-parent {
@@ -203,17 +203,29 @@
 /* Flex-box */
 .flex-parent {
     display: flex;
+    /* Eje principal */
+    /* flex-direction: row;flex-direction: row (DEFAULT)| columna */
+    /* flex-wrap:wrap;flex-wrap:wrap| nowrap (DEFAULT) */
+     /* flex-flow: row wrap;|Esta propiedad es exactamente igual que las 2 anteriores pero mas simplificada */
+    /* justify-content:flex-end; */
+    /* justify-content: flex-start; */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
 
-    flex-direction: row;/*flex-direction: row (DEFAULT)| columna */
-    flex-wrap:wrap;/*flex-wrap:wrap| nowrap (DEFAULT) */
-    /* flex-flow: row wrap;|Esta propiedad es exactamente igual que las 2 anteriores pero mas simplificada */
-    
+    /* Eje secundario */
+    /* align-items: center; */
+    /* align-items: stretch; esta es la propiedad que se aplica DEFAULT para los contenedores*/
+    /* align-items: flex-start;*/
+    /* align-items:flex-end ; */
+    border: 2px solid #333;
+    height: 250px;
 }
 
 [class^="flex-child"] {
     width: 250px;
-    height: 250px;
-
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,4 +239,10 @@
 .flex-parent > div:nth-child(odd) {
     background-color:rgb(187, 183, 183);
     color: rgb(74, 74, 74);  
+}
+
+.flex-child-2 {
+    flex-shrink: 3;
+    flex-grow: 1;/* valor por defecto 0 y si se lo ponemos a un elemento este crecera y tomara todo el espacio disponible*/
+    
 }
