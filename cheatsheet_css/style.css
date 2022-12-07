@@ -143,16 +143,16 @@
 
 /* Overflow - Gestion del desbordamiento del contenido */
 
-[class^="overflow-parent"] {
+/* [class^="overflow-parent"] {
     width: 200px;
     height: 100px;
     border: 3px dashed #333;
     margin-bottom: 150px;
-}
+} */
 
 .overflow-parent-1 {
     overflow: hidden;
-}
+} 
 
 .overflow-parent-2 {
     overflow: visible;
@@ -203,5 +203,28 @@
 /* Flex-box */
 .flex-parent {
     display: flex;
+
+    flex-direction: row;/*flex-direction: row (DEFAULT)| columna */
+    flex-wrap:wrap;/*flex-wrap:wrap| nowrap (DEFAULT) */
+    /* flex-flow: row wrap;|Esta propiedad es exactamente igual que las 2 anteriores pero mas simplificada */
+    
 }
 
+[class^="flex-child"] {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-parent > div:nth-child(even) {
+    background-color:rgb(0, 0, 0);
+    color:white;  
+}
+
+.flex-parent > div:nth-child(odd) {
+    background-color:rgb(187, 183, 183);
+    color: rgb(74, 74, 74);  
+}
