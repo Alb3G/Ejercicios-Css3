@@ -1,0 +1,33 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(150, 37, 255);
+    margin: 40px 60px;
+}
+
+/* Card style */
+.card {
+    background-color: whitesmoke;
+    padding: 40px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 93vh;
+}
+
+.card h2 {
+    color: rgb(223, 221, 221);
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+[class^="box"] {
+    background-color: rgb(223, 221, 221);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
