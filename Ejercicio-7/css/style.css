@@ -1,0 +1,50 @@
+/* Estilos generales */
+body {
+    background-color: rgb(208, 167, 246);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background-color: azure;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.style {
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.content {
+    flex-grow: 0.7;
+    width: 100%;
+}
+
+[class^="box"] {
+    background-color: rgb(203, 202, 202);
+    height: 25px;
+    margin-bottom: 20px;
+}
+/* .radius {
+    background-color: rgb(203, 202, 202);
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+} esta propiedad es para crear el circulo del footer*/
+.footer {
+    background-color: rgb(203, 202, 202);
+    height: 20px;
+    width: 25%;
+}
+
+
+
+
+

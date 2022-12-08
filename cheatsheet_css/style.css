@@ -43,7 +43,8 @@
 .pos-absolute-parent {  
     height: 300px;
     border: 15px solid tomato;
-    position: relative; /*si le ponemos al elemento padre posicion absoluta ya podremos mover al elemeto hijo por dentro del padre en lugar de todo el viewport*/
+    position: relative;/* si le ponemos al elemento padre posicion absoluta ya podremos mover al elemeto hijo por dentro del padre en lugar de todo el viewport*/
+   
 }
 
 .pos-absolute-child {
