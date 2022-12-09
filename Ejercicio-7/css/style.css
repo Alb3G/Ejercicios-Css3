@@ -28,18 +28,20 @@ body {
 }
 
 [class^="box"] {
-    background-color: rgb(203, 202, 202);
+    background-color: rgb(245, 247, 247);
     height: 25px;
     margin-bottom: 20px;
 }
+
 /* .radius {
     background-color: rgb(203, 202, 202);
     width: 74px;
     height: 74px;
     border-radius: 50%;
 } esta propiedad es para crear el circulo del footer*/
+
 .footer {
-    background-color: rgb(203, 202, 202);
+    background-color: rgb(245, 247, 247);
     height: 20px;
     width: 25%;
 }
