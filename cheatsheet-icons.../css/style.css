@@ -1,0 +1,4 @@
+/* Estilos de los iconos */
+.style { /*tratamos a los iconos como si fueran texto en el css dalor color  con la propiedad color en vez de background-color*/
+    color: blueviolet;
+}
