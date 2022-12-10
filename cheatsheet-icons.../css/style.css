@@ -2,3 +2,80 @@
 .style { /*tratamos a los iconos como si fueran texto en el css dalor color  con la propiedad color en vez de background-color*/
     color: blueviolet;
 }
+
+[class^="gradient"] {
+    height: 400px;
+    margin-bottom: 10px;
+    
+}
+
+.gradient-1 {
+    background: linear-gradient(to right, violet, blue);
+}
+
+.gradient-2 {
+    background: linear-gradient(to bottom, white, blue 20%, white);
+}
+
+.gradient-3 {
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url(/Ejercicio5/img/miguel-lindo-EqkbZ-Qcl9o-unsplash.jpg);
+}
+
+.gradient-4 {
+    background: radial-gradient(white, red,white,red);
+    width: 50%;
+    box-shadow: 5px 5px 15px #333;
+}
+/* Transformaciones */
+
+.transform {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(248, 153, 248);
+
+    transform: translate(300px, 50px) scale(1.5) skew(25deg);/*la propiedad rotate(Xdeg) nos rota el elemento los grados que queramos*/
+}
+
+/* Transiciones */
+.transition {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(148, 124, 242);
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out; */
+    transition: all 1s ease-in-out;
+}
+
+.transition:hover {
+    transform: scale(1.3) rotate(3deg);
+}
+
+/* Animaciones */
+.text-animation {
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+
+    50% { /*Este 50% es en base a la duracion de la animacion*/
+        margin-left: 0; 
+    }
+
+    to {
+        margin-left: 100%;
+    }
+}

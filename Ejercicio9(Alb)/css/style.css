@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: blanchedalmond;
+    min-height: 100vh;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+}
+
+[class^="box"] {
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    cursor: pointer;
+}
+
+.grow {
+    transition: all 0.2s ease-out;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
+
+.border {
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+/* .appear {
+    animation: appear 5s 1;
+} */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.box-2 {animation-delay: 1s;}
+.box-3 {animation-delay: 1.5s;}
+.box-4 {animation-delay: 2s;}
+.box-5 {animation-delay: 2.5s;}
+.box-6 {animation-delay: 3s;}
+.box-7 {animation-delay: 3.5s;}
+.box-8 {animation-delay: 4s;}
+.box-9 {animation-delay: 4.5s;}
+.box-10 {animation-delay: 5s;}
+.box-11 {animation-delay: 5.5s;}
+.box-12 {animation-delay: 6s;}
+.box-13 {animation-delay: 6.5s;}
+.box-14 {animation-delay: 7s;}
+.box-15 {animation-delay: 7.5s;}
+.box-16 {animation-delay: 8s;}
+
+
