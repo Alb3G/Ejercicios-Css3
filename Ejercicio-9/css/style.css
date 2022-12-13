@@ -1,6 +1,11 @@
 body {
+    min-height: 100vh;
     background-image: url(/Ejercicio-9/img/be6980f240fc6a14730e8f85aea07f32.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .matrix {
@@ -13,7 +18,7 @@ body {
 
 [class^="box"] {
     background-color: rgb(103, 180, 246);
-
+    cursor: pointer;
     animation: appear 2s ease 0.5s 1 normal forwards;
     opacity: 0;
 
