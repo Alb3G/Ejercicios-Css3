@@ -90,10 +90,15 @@ body {
 a {
     color: var(--purple-light);
     text-decoration: none;
+    
 }
 
 a:hover {
   color: rgba(109, 4, 228, 0.979);
+}
+
+#no-pass {
+    margin-bottom: 0.5em;
 }
 
 .form h2 {
