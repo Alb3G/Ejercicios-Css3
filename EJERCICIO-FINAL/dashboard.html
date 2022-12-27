@@ -13,7 +13,7 @@
     <nav>
         <i class="fa-solid fa-bars"></i>
 
-        <div class="search-bar radius">
+        <div class="search-bar">
             <label for="search-bar"><i class="fa-solid fa-magnifying-glass icon"></i></label>
             <input type="search" placeholder="search for anything" id="search-bar" class="radius input-field">
         </div>
@@ -24,6 +24,7 @@
         </div>
     </nav>
     <main class="container">
+        <!-- Esta seccion tambien deberia tener un id para tratarla en conjunto -->
         <section>
             <h2>Dashboard</h2>
             <button id="view-more" class="radius">
@@ -39,35 +40,111 @@
             
             <button class="total-clients radius cursor-pointer">
                 <i class="fa-solid fa-users"></i>
-                <span class="span-margin">Total Clients</span>
-                <h3>6389</h3>
+                <span class="span-margin">
+                    Total Clients
+                    <pre>6389</pre>
+                </span>
             </button>
             
             
             <button class="account-balance radius cursor-pointer">
                 <i class="fa-solid fa-dollar-sign"></i>
-                <span class="span-margin">Account Balance</span>
-                <h3>$ 46,760</h3>
+                <span class="span-margin">
+                    Account Balance
+                    <pre>$ 46,760.89</pre>
+                </span>
             </button>
             
             
             <button class="new-sales radius cursor-pointer">
                 <i class="fa-solid fa-cart-shopping"></i>
-                <span class="span-margin">New Sales</span>
-                <h3>376</h3>
+                <span class="span-margin">
+                    New Sales
+                    <pre>376</pre>
+                </span>
             </button>
             
             
             <button class="pending-contacts radius cursor-pointer">
                 <i class="fa-regular fa-comment-dots"></i>
+                <span class="span-margin">
+                    Pending Contacts
+                    <pre>35</pre>
+                </span>
+            </button>
+
+            <!-- <a href="#" target="_blank" class="pending-contacts radius cursor-pointer">
+                <i class="fa-regular fa-comment-dots"></i>
                 <span class="span-margin">Pending Contacts</span>
                 <h3>35</h3>
-            </button>
-           
+            </a> -->
         </section>
-
         
-
+        <section id="table-data">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Client</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hans Burguer</td>
+                        <td>$ 863.45</td>
+                        <td><span class="status-approved">Approved</span></td>
+                        <td>06/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Sarah Curry
+                            <pre>10x Developer</pre>
+                        </td>
+                        <td>$ </td>
+                        <td><span class="status-approved">Approved</span></td>
+                        <td>06/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Hans Burguer</td>
+                        <td>$ 863.45</td>
+                        <td><span class="status-approved">Approved</span></td>
+                        <td>06/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Hans Burguer</td>
+                        <td>$ 863.45</td>
+                        <td><span class="status-approved">Approved</span></td>
+                        <td>06/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Hans Burguer</td>
+                        <td>$ 863.45</td>
+                        <td><span class="status-approved">Approved</span></td>
+                        <td>06/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Hans Burguer</td>
+                        <td>$ 863.45</td>
+                        <td><span class="status-approved">Approved</span></td>
+                        <td>06/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Hans Burguer</td>
+                        <td>$ 863.45</td>
+                        <td><span class="status-approved">Approved</span></td>
+                        <td>06/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Hans Burguer</td>
+                        <td>$ 863.45</td>
+                        <td><span class="status-approved">Approved</span></td>
+                        <td>06/10/2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </html>
