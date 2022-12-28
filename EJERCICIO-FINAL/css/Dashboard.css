@@ -1,0 +1,120 @@
+/*---------- CSS Resets ----------*/
+:root {
+  --purple-light:#7e3af2;
+  --purple-dark: #6c2bd9;
+  --orange-light: #feecdc;
+  --orange-dark: #ff5a1f;
+  --blue-light: #e1effe;
+  --blue-dark: #3f83f8;
+  --green-light: #def7ec;
+  --green-dark: #0e9f6e;
+  --teal-light: #d5f5f6;
+  --teal-dark: #0694a2;
+  --red-light: #fde8e8;
+  --red-dark: #e02424;
+  --gray-light: #f4f5f7;
+  --gray-dark: #24262d;
+}
+
+@font-face {
+  font-family: 'Inter', 'system-ui', 'Roboto', 'Helvetica', 'Arial';
+  font-style: normal;
+  font-weight: 400, 500, 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Body default settings */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--gray-light);
+}
+
+
+
+/*---------- General styles ----------*/
+.purple-color {
+  color: var(--purple-light);
+}
+/*---------- Header Styles Starts----------*/
+header {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+/* positioning */
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icons img {
+  border-radius: 50%;
+}
+
+.header-icons > i {
+  display: flex;
+  justify-content: center;
+}
+
+.header-icons > i > div.red-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--red-dark);
+}
+
+.input-search {
+  border: 0;
+  width: 400px;
+  height:30px;
+  background-color: var(--gray-light);
+  padding-left: 25px;
+}
+
+.input-field {
+  position: relative;
+}
+
+.glass-icon {
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  padding-left: 5px;
+}
+
+/* style */
+
+
+
+
