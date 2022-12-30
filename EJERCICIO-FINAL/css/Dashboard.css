@@ -50,11 +50,43 @@ body {
   background-color: var(--gray-light);
 }
 
-
-
 /*---------- General styles ----------*/
 .purple-color {
   color: var(--purple-light);
+}
+.none {
+  display: none;
+}
+
+.padding {
+ padding-left: 1em;
+ padding-top: 0.5em;
+}
+
+.grid-template-btns i {
+  margin-right: 15px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.radius {
+  border-radius: 5px;
+  border: 1px solid rgba(205, 204, 204, 0.608);
+}
+
+.box  {
+  margin-top: 2em;
+  background-color: white;
+  height: 90px;
+  width: 220px;
+}
+.box:hover {
+  cursor: pointer;
+  border: 1px solid var(--gray-dark);
 }
 /*---------- Header Styles Starts----------*/
 header {
@@ -65,7 +97,7 @@ header {
   align-items: center;
   background-color: white;
 }
-/* positioning */
+
 .header-icons {
   display: flex;
   justify-content: center;
@@ -107,14 +139,13 @@ header {
   transform:translateY(-50%);
   padding-left: 5px;
 }
-
+/*---------- Header Styles Ends----------*/
 /* Aside style */
 aside {
   max-width: 250px;
   min-width: 250px;
   background-color: white;
   height: 100vh;
-  float: left;
 }
 
 aside a {
@@ -124,15 +155,16 @@ aside a {
 aside  a  {
   display: block;
   text-decoration: none;
-  color: var(--gray-dark);
+  color: rgb(98, 98, 98);
 }
 
 aside a:hover {
   border-left:5px solid var(--purple-dark);
+  color: var(--gray-dark);
 }
 
 aside > nav > a > span {
-  font-size: small;
+  font-size: medium;
 }
 
 .btn-product {
@@ -148,7 +180,7 @@ aside > nav > a > span {
   justify-content:space-between;
   border: none;
   border-radius: 10px;
-  background-color: var(--purple-dark);
+  background-color: var(--purple-light);
   color: white;
   cursor: pointer;
 }
@@ -160,7 +192,7 @@ main {
 }
 
 #main-content {
-  padding: 30px;
+  padding: 3em;
 }
 
 .dashboard-button {
@@ -171,9 +203,111 @@ main {
   justify-content:space-between;
   border: none;
   border-radius: 10px;
-  background-color: var(--purple-dark);
+  background-color: var(--purple-light);
   color: white;
   cursor: pointer;
 }
+/* Grid Divs Styles */
+.grid-template-btns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
 
+.total-clients i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange-dark);
+  background-color: #ffe8cd;
+  height: 30px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.account-balance i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange-dark);
+  background-color: #d2f4e7;
+  height: 30px;
+  width: 35px;
+  border-radius: 50%;
+  color: var(--green-dark);
+}
+
+.new-sales i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange-dark);
+  background-color: #c3e3fd;
+  height: 30px;
+  width: 35px;
+  border-radius: 50%;
+  color: var(--blue-dark);
+}
+
+.pending-contacts i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5ffff;
+  height: 30px;
+  width: 35px;
+  border-radius: 50%;
+  color: var(--teal-dark);
+}
+
+.grid-template-btns span {
+  font-size: small;
+  font-weight: bold;
+  color: rgb(185, 185, 185);
+}
+
+.grid-template-btns > div span > pre {
+  font-weight: bold;
+  color: var(--gray-dark);
+  font-size: x-large;
+}
+
+/* Table styles */
+#table-section {
+  margin-top: 3em;
+  border: 1px;
+}
+
+#table-data {
+  width: 100%;
+  
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.table-head {
+  border-bottom:1px solid rgba(205, 204, 204, 0.608);
+}
+.status {
+  background-color: var(--green-light);
+  width: 80px;
+  height: 60px;
+  border-radius: 20%;
+}
+
+.status-approved {
+  font-size: small;
+  font-weight: bold;
+  color: var(--green-dark);
+}

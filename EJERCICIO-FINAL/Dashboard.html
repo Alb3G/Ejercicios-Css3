@@ -11,6 +11,7 @@
 <body>
     <header>
         <div class="logo">
+            <i class="fa-solid fa-bars menu-display none"></i>
             <h3>&#128640; CodeSpace Shop</h3>
         </div>
         <div class="input-field">
@@ -71,20 +72,123 @@
                     <span>View more →</span>
                 </button>
             </div>
-            <div class="grid-template-btns">
-                <div class="total-clients">
-                    
+            <div class="grid-template-btns flex">
+                <div class="total-clients box radius padding flex-center">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="span-margin">
+                        Total Clients
+                        <pre>6389</pre>
+                    </span>
                 </div>
-                <div class="acount-balance">
-
+                <div class="account-balance box radius padding flex-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span class="span-margin">
+                        Account Balance
+                        <pre>$ 46,760.89</pre>
+                    </span>
                 </div>
-                <div class="new-sales">
-
+                <div class="new-sales box radius padding flex-center">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="span-margin">
+                        New Sales
+                        <pre>376</pre>
+                    </span>
                 </div>
-                <div class="pending-contacts">
-
+                <div class="pending-contacts box radius padding flex-center">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <span class="span-margin">
+                        Pending Contacts
+                        <pre>35</pre>
+                    </span>
                 </div>
             </div>
+
+            <section id="table-section">
+                <table id="table-data" class="radius">
+                    <thead class="table-head">
+                        <tr>
+                            <th class="left">Client</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <td>
+                                Hans Burguer
+                                <pre>10x Developer</pre>
+                            </td>
+                            <td class="center">$ 863.45</td>
+                            <td class="center status"><span class="status-approved">Approved</span></td>
+                            <td class="center">06/10/2022</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sarah Curry
+                                <pre>Desginer</pre>
+                            </td>
+                            <td class="center">$ 86.00</td>
+                            <td class="center"><span class="status-approved">Approved</span></td>
+                            <td class="center">06/10/2022</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Rulia Joberts
+                                <pre>Actress</pre>
+                            </td>
+                            <td class="center">$ 1276.45</td>
+                            <td class="center status"><span class="status-approved">Approved</span></td>
+                            <td class="center">06/10/2022</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Wenzel Dashintong
+                                <pre>Actor</pre>
+                            </td>
+                            <td class="center">$ 863.45</td>
+                            <td class="center"><span class="status-approved">Approved</span></td>
+                            <td class="center">06/10/2022</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Dave Li
+                                <pre>Influencer</pre>
+                            </td>
+                            <td class="center">$ 863.45</td>
+                            <td class="center status"><span class="status-approved">Approved</span></td>
+                            <td class="center">06/10/2022</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Maria Rarovic
+                                <pre>Runner</pre>
+                            </td>
+                            <td class="center">$ 863.45</td>
+                            <td class="center status"><span class="status-approved">Approved</span></td>
+                            <td class="center">06/10/2022</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hitney Wouston
+                                <pre>Singer</pre>
+                            </td>
+                            <td class="center">$ 863.45</td>
+                            <td class="center status"><span class="status-approved">Approved</span></td>
+                            <td class="center">06/10/2022</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hans Burguer
+                                <pre>10x Developer</pre>
+                            </td>
+                            <td class="center">$ 863.45</td>
+                            <td class="center status"><span class="status-approved">Approved</span></td>
+                            <td class="center">06/10/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </section>
     </main>
 </body>
