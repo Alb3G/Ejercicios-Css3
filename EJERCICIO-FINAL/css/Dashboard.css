@@ -93,6 +93,10 @@ body {
   font-size: 0.9em;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 /*---------- Header Styles Starts----------*/
 header {
   width: 100%;
@@ -198,6 +202,7 @@ main {
 
 #main-content {
   padding: 3em;
+  width: 1280px;
 }
 
 .dashboard-button {
@@ -281,6 +286,9 @@ main {
   color: var(--gray-dark);
   font-size: x-large;
 }
+pre {
+  color: gray;
+}
 
 /* Table styles */
 #table-section {
@@ -295,6 +303,7 @@ main {
 
 .left {
   text-align: left;
+  width: 400px;
 }
 
 .center {
@@ -304,11 +313,17 @@ main {
 .table-head {
   margin-bottom: 100px;
   border-bottom:1px solid rgba(205, 204, 204, 0.608);
+  background-color: var(--gray-light);
 }
+
+.status-width {
+  width: 200px;
+}
+
 .status {
   background-color: var(--green-light);
   width: 1px;
-  border-radius: 90%;
+  height: 50px;
   padding: 1em;
 }
 
@@ -320,8 +335,6 @@ main {
 
 .status-denied-background {
   background-color: var(--red-light);
-  width: 1px;
-  border-radius: 90%;
   padding: 1em;
 }
 
@@ -339,8 +352,5 @@ main {
 
 .status-expired-background {
   background-color: var(--gray-light);
-  width: 1px;
-  border-radius: 90%;
   padding: 1em;
 }
-
