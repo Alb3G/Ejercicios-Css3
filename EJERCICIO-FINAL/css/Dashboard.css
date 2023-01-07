@@ -74,7 +74,7 @@ body {
 }
 
 .radius {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid rgba(205, 204, 204, 0.608);
 }
 
@@ -82,7 +82,7 @@ body {
   margin-top: 2em;
   background-color: white;
   height: 90px;
-  width: 220px;
+  width: 300px;
 }
 .box:hover {
   cursor: pointer;
@@ -97,16 +97,21 @@ body {
   font-weight: bold;
 }
 
+.img {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
 /*---------- Header Styles Starts----------*/
 header {
   width: 100%;
+  height: 80px;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
 }
-
 .header-icons {
   display: flex;
   justify-content: center;
@@ -202,12 +207,13 @@ main {
 
 #main-content {
   padding: 3em;
-  width: 1280px;
+  width: 100%;
 }
 
 .dashboard-button {
   margin-top: 1em;
   padding: 10px;
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content:space-between;
@@ -222,6 +228,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .flex {
@@ -353,4 +360,12 @@ pre {
 .status-expired-background {
   background-color: var(--gray-light);
   padding: 1em;
+}
+
+tfoot {
+  background-color: var(--gray-light);
+}
+/* Media Querys */
+@media only screen and (max-width:600px) {
+  
 }
