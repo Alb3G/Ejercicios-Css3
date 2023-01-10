@@ -45,6 +45,7 @@ dd {
 /* Body default settings */
 body {
   min-height: 100vh;
+  min-width: 640px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--gray-light);
@@ -209,6 +210,9 @@ main {
   padding: 3em;
   width: 100%;
 }
+.dashboard-content {
+  width: 1280px;
+}
 
 .dashboard-button {
   margin-top: 1em;
@@ -228,7 +232,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 1em;
 }
 
 .flex {
@@ -366,6 +370,68 @@ tfoot {
   background-color: var(--gray-light);
 }
 /* Media Querys */
-@media only screen and (max-width:600px) {
-  
+@media only screen and (max-width:1595px) {
+  .dashboard-content {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width:1243px) {
+  .dashboard-content {
+    width: 800px;
+  }
+
+  .grid-template-btns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 300px;
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width:1124px) {
+  .dashboard-content {
+    width: 600px;
+  }
+
+  .grid-template-btns {
+    grid-template-columns: 1fr;
+  }
+
+  .total-clients {
+    width: 100%;
+  }
+
+  .account-balance {
+    width: 100%;
+  }
+
+  .new-sales {
+    width: 100%;
+  }
+
+  .pending-contacts {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:935px) {
+  .dashboard-content {
+    width: 550px;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .web-title {
+    display: none;
+  }
+
+  .menu-display {
+    display: block;
+    color: var(--purple-light);
+  }
+
+ 
 }

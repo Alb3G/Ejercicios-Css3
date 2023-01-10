@@ -12,7 +12,7 @@
     <header>
         <div>
             <i class="fa-solid fa-bars menu-display none"></i>
-            <h3>&#128640; CodeSpace Shop</h3>
+            <h3 class="web-title">&#128640; CodeSpace Shop</h3>
         </div>
         <div class="input-field">
             <span><i class="fa-solid fa-magnifying-glass glass-icon purple-color"></i></span>
@@ -62,160 +62,161 @@
             </div>
         </aside>
         <section id="main-content">
-            <h1>Dashboard</h1>
-            <div>
-                <button class="dashboard-button">
-                    <div class="flex-center">
-                        <i class="fa-solid fa-star"></i>
-                        <span>See what you've missed!</span>
+            <div class="dashboard-content">
+                <h1>Dashboard</h1>
+                <div>
+                    <button class="dashboard-button">
+                        <div class="flex-center">
+                            <i class="fa-solid fa-star"></i>
+                            <span>See what you've missed!</span>
+                        </div>
+                        <span class="flex-center">View more →</span>
+                    </button>
+                </div>
+                <div class="grid-template-btns flex">
+                    <div class="total-clients box radius padding flex-center">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="span-margin">
+                            Total Clients
+                            <pre>6389</pre>
+                        </span>
                     </div>
-                    <span class="flex-center">View more →</span>
-                </button>
-            </div>
-            <div class="grid-template-btns flex">
-                <div class="total-clients box radius padding flex-center">
-                    <i class="fa-solid fa-users"></i>
-                    <span class="span-margin">
-                        Total Clients
-                        <pre>6389</pre>
-                    </span>
+                    <div class="account-balance box radius padding flex-center">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <span class="span-margin">
+                            Account Balance
+                            <pre>$ 46,760.89</pre>
+                        </span>
+                    </div>
+                    <div class="new-sales box radius padding flex-center">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="span-margin">
+                            New Sales
+                            <pre>376</pre>
+                        </span>
+                    </div>
+                    <div class="pending-contacts box radius padding flex-center">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <span class="span-margin">
+                            Pending Contacts
+                            <pre>35</pre>
+                        </span>
+                    </div>
                 </div>
-                <div class="account-balance box radius padding flex-center">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    <span class="span-margin">
-                        Account Balance
-                        <pre>$ 46,760.89</pre>
-                    </span>
-                </div>
-                <div class="new-sales box radius padding flex-center">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="span-margin">
-                        New Sales
-                        <pre>376</pre>
-                    </span>
-                </div>
-                <div class="pending-contacts box radius padding flex-center">
-                    <i class="fa-regular fa-comment-dots"></i>
-                    <span class="span-margin">
-                        Pending Contacts
-                        <pre>35</pre>
-                    </span>
-                </div>
-            </div>
-
-            <section id="table-section">
-                <table id="table-data" class="radius">
-                    <thead class="table-head">
-                        <tr>
-                            <th class="left">Client</th>
-                            <th>Amount</th>
-                            <th class="status-width">Status</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-body">
-                        <tr>
-                            <td class="names-width font-bold flex-center">
-                                <img src="./img/table-img-1.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
-                                Hans Burguer
-                                <pre>  10x Developer</pre>
-                            </td>
-                            <td class="center"><span class="small-font">$ 863.45</span></td>
-                            <td class="center status"><span class="status-approved">Approved</span></td>
-                            <td class="center"><span class="small-font">06/10/2022</span></td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold flex-center">
-                                <img src="./img/table-img-3.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
-                                Sarah Curry
-                                <pre>  Desginer</pre>
-                            </td>
-                            <td class="center"><span class="small-font">$ 86.00</span></td>
-                            <td class="center status-denied-background"><span class="status-denied">Denied</span></td>
-                            <td class="center"><span class="small-font">06/10/2022</span></td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold flex-center">
-                                <img src="./img/table-img-4.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
-                                Rulia Joberts
-                                <pre>  Actress</pre>
-                            </td>
-                            <td class="center"><span class="small-font">$ 1276.45</span></td>
-                            <td class="center status"><span class="status-approved">Approved</span></td>
-                            <td class="center"><span class="small-font">06/10/2022</span></td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold flex-center">
-                                <img src="./img/table-img-2.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
-                                Wenzel Dashintong
-                                <pre>  Actor</pre>
-                            </td>
-                            <td class="center"><span class="small-font">$ 863.45</span></td>
-                            <td class="center status-expired-background"><span class="status-expired">Expired</span></td>
-                            <td class="center"><span class="small-font">06/10/2022</span></td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold flex-center">
-                                <img src="./img/table-img-1.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
-                                Dave Li
-                                <pre>  Influencer</pre>
-                            </td>
-                            <td class="center"><span class="small-font">$ 863.45</span></td>
-                            <td class="center status"><span class="status-approved">Approved</span></td>
-                            <td class="center"><span class="small-font">06/10/2022</span></td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold flex-center">
-                                <img src="./img/table-img-4.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
-                                Maria Rarovic
-                                <pre>  Runner</pre>
-                            </td>
-                            <td class="center"><span class="small-font">$ 863.45</span></td>
-                            <td class="center status"><span class="status-approved">Approved</span></td>
-                            <td class="center"><span class="small-font">06/10/2022</span></td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold flex-center">
-                                <img src="./img/table-img-3.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
-                                Hitney Wouston
-                                <pre>  Singer</pre>
-                            </td>
-                            <td class="center"><span class="small-font">$ 863.45</span></td>
-                            <td class="center status"><span class="status-approved">Approved</span></td>
-                            <td class="center"><span class="small-font">06/10/2022</span></td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold flex-center">
-                                <img src="./img/table-img-1.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
-                                Hans Burguer
-                                <pre>  10x Developer</pre>
-                            </td>
-                            <td class="center"><span class="small-font">$ 863.45</span></td>
-                            <td class="center status"><span class="status-approved">Approved</span></td>
-                            <td class="center"><span class="small-font">06/10/2022</span></td>
-                        </tr>
-                    </tbody>
-                    <!-- <tfoot>
-                        <tr>
-                            <td colspan="4">
-                                <div>
-                                    <span>SHOWING 21-30 OF 100</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span> < </span>
-                                <span> 1 </span>
-                                <span> 2 </span>
-                                <span> 3 </span>
-                                <span> 4 </span>
-                                <span> ... </span>
-                                <span> 8 </span>
-                                <span> 9 </span>
-                                <span> > </span>
-                            </td>
-                        </tr>
-                    </tfoot> -->
-                </table>    
+                <section id="table-section">
+                    <table id="table-data" class="radius">
+                        <thead class="table-head">
+                            <tr>
+                                <th class="left">Client</th>
+                                <th>Amount</th>
+                                <th class="status-width">Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td class="names-width font-bold flex-center">
+                                    <img src="./img/table-img-1.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
+                                    Hans Burguer
+                                    <pre>  10x Developer</pre>
+                                </td>
+                                <td class="center"><span class="small-font">$ 863.45</span></td>
+                                <td class="center status"><span class="status-approved">Approved</span></td>
+                                <td class="center"><span class="small-font">06/10/2022</span></td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold flex-center">
+                                    <img src="./img/table-img-3.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
+                                    Sarah Curry
+                                    <pre>  Desginer</pre>
+                                </td>
+                                <td class="center"><span class="small-font">$ 86.00</span></td>
+                                <td class="center status-denied-background"><span class="status-denied">Denied</span></td>
+                                <td class="center"><span class="small-font">06/10/2022</span></td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold flex-center">
+                                    <img src="./img/table-img-4.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
+                                    Rulia Joberts
+                                    <pre>  Actress</pre>
+                                </td>
+                                <td class="center"><span class="small-font">$ 1276.45</span></td>
+                                <td class="center status"><span class="status-approved">Approved</span></td>
+                                <td class="center"><span class="small-font">06/10/2022</span></td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold flex-center">
+                                    <img src="./img/table-img-2.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
+                                    Wenzel Dashintong
+                                    <pre>  Actor</pre>
+                                </td>
+                                <td class="center"><span class="small-font">$ 863.45</span></td>
+                                <td class="center status-expired-background"><span class="status-expired">Expired</span></td>
+                                <td class="center"><span class="small-font">06/10/2022</span></td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold flex-center">
+                                    <img src="./img/table-img-1.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
+                                    Dave Li
+                                    <pre>  Influencer</pre>
+                                </td>
+                                <td class="center"><span class="small-font">$ 863.45</span></td>
+                                <td class="center status"><span class="status-approved">Approved</span></td>
+                                <td class="center"><span class="small-font">06/10/2022</span></td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold flex-center">
+                                    <img src="./img/table-img-4.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
+                                    Maria Rarovic
+                                    <pre>  Runner</pre>
+                                </td>
+                                <td class="center"><span class="small-font">$ 863.45</span></td>
+                                <td class="center status"><span class="status-approved">Approved</span></td>
+                                <td class="center"><span class="small-font">06/10/2022</span></td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold flex-center">
+                                    <img src="./img/table-img-3.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
+                                    Hitney Wouston
+                                    <pre>  Singer</pre>
+                                </td>
+                                <td class="center"><span class="small-font">$ 863.45</span></td>
+                                <td class="center status"><span class="status-approved">Approved</span></td>
+                                <td class="center"><span class="small-font">06/10/2022</span></td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold flex-center">
+                                    <img src="./img/table-img-1.jpeg" alt="profile img" width="30px" height="30px" class="radius img">
+                                    Hans Burguer
+                                    <pre>  10x Developer</pre>
+                                </td>
+                                <td class="center"><span class="small-font">$ 863.45</span></td>
+                                <td class="center status"><span class="status-approved">Approved</span></td>
+                                <td class="center"><span class="small-font">06/10/2022</span></td>
+                            </tr>
+                        </tbody>
+                        <!-- <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <div>
+                                        <span>SHOWING 21-30 OF 100</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span> < </span>
+                                    <span> 1 </span>
+                                    <span> 2 </span>
+                                    <span> 3 </span>
+                                    <span> 4 </span>
+                                    <span> ... </span>
+                                    <span> 8 </span>
+                                    <span> 9 </span>
+                                    <span> > </span>
+                                </td>
+                            </tr>
+                        </tfoot> -->
+                    </table>
+            </div>    
             </section>
         </section>
     </main>
